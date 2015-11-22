@@ -10,10 +10,7 @@
     <authorEmail>eitamar@j-guru.com</authorEmail>
     <authorUrl>http://www.example.com</authorUrl>
     <version>1.0.0</version>
-    <description><![CDATA[ 
-		<h1>Bootstrap 3 Joomla 3 Front template</h1>
-		<p>Created by <a href="http://www.j-guru.com" target="_blank">Itamar Elharar | j-guru.com</a>.</p>
-	]]></description>
+    <description>TPL_J3ACC_XML_DESCRIPTION</description>
 	
     <files>
         <folder>css</folder>
@@ -44,11 +41,15 @@
         <position>content-bottom</position>
         <position>content-top</position>
         <position>bottom</position>
-<!--        <position>navbar2</position>-->
+        <!--        <position>navbar2</position>-->
         <position>main-content</position>
       
     </positions>
-	
+    
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.tpl_j3acc.ini</language>
+        <language tag="en-GB">en-GB/en-GB.tpl_j3acc.sys.ini</language>
+    </languages>
     <config>
         <fields name="params">
                     
@@ -69,7 +70,7 @@
                 
             </fieldset>
             
-             <fieldset name="jsandcss" label="JS &amp; Css">
+            <fieldset name="jsandcss" label="JS &amp; Css">
                 
                 
                 <field name="cdn_bootstrap" type="radio" default="0" label="Load Bootstrap from CDN ?" description="" class="btn-group">
