@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+
+<extension version="3.3" type="template" client="site" method="upgrade">
+	
+    <name>j3acc</name>
+    <creationDate>11-21-2015</creationDate>
+    <author>Itamar Elharar</author>
+    <copyright>Copyright © 2015 j-guru.com</copyright>
+    <authorEmail>eitamar@j-guru.com</authorEmail>
+    <authorUrl>http://www.example.com</authorUrl>
+    <version>1.0.0</version>
+    <description><![CDATA[ 
+		<h1>Bootstrap 3 Joomla 3 Front template</h1>
+		<p>Created by <a href="http://www.j-guru.com" target="_blank">Itamar Elharar | j-guru.com</a>.</p>
+	]]></description>
+	
+    <files>
+        <folder>css</folder>
+        <folder>fonts</folder>
+        <folder>html</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+        <filename>component.php</filename>
+        <filename>error.php</filename>
+        <filename>index.php</filename>
+        <filename>logic.php</filename>
+        <filename>offline.php</filename>
+        <filename>runless.php</filename>
+        <filename>template_preview.png</filename>
+        <filename>template_thumbnail.png</filename>
+        <filename>favicon.ico</filename>
+        <filename>templateDetails.xml</filename>
+    </files>
+	
+    <positions>
+        <position>navbar</position>
+        <position>breadcrumbs</position>
+        <position>largebar</position>
+        <position>sidebar</position>
+        <position>debug</position>
+        <position>analytics</position>
+        <position>showcase</position>
+        <position>content-bottom</position>
+        <position>content-top</position>
+        <position>bottom</position>
+<!--        <position>navbar2</position>-->
+        <position>main-content</position>
+      
+    </positions>
+	
+    <config>
+        <fields name="params">
+                    
+            <fieldset name="options">
+                
+                
+                <field name="showbranding" type="radio" default="1" label="Show Branding" description="" class="btn-group">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                
+                <field name="show_module_homepage" type="radio" default="1" label="Show Module on Homepage" description="if enabled will load module position 'main-content' insted of joomla homepage" class="btn-group">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+            
+                <field name="analytics_id" type="text" default="" label="Google Analytics ID" description="in this format: UA-XXXXXXX-X" class="input-mid" />
+                
+            </fieldset>
+            
+             <fieldset name="jsandcss" label="JS &amp; Css">
+                
+                
+                <field name="cdn_bootstrap" type="radio" default="0" label="Load Bootstrap from CDN ?" description="" class="btn-group">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                
+                <field name="cdn_jquery" type="radio" default="0" label="Load JQuery from CDN ?" description="" class="btn-group">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+              
+                
+                
+            </fieldset>
+                        
+            <fieldset name="advanced">
+                
+                <field name="runless" type="radio" default="1" label="Run Less Compiler(DEV mode)" description="" class="btn-group">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                
+                <field name="compressless" type="radio" default="1" label="Compress Less ?" description="" class="btn-group">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                
+            </fieldset>
+        </fields>
+    </config>
+
+</extension>
